@@ -529,6 +529,7 @@ static void * KVOContext = &KVOContext;
 
 - (void)webViewWebContentProcessDidTerminate:(WKWebView *)webView
 {
+    NSLog(@"webViewWebContentProcessDidTerminate - reload");
     [webView reload];
 }
 
